@@ -5,6 +5,6 @@
  */
 int main(void)
 {
-print("with proper grammer, but the outcome is a piece of art,\n");
-return (0);
+	print("with proper grammer, but the outcome is a piece of art,\n");
+	return (0);
 }
