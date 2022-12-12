@@ -8,11 +8,11 @@ int main(void)
 {
 	int n, m, k;
 
-	for (n = '0'; n < '9'; n++)
+	for (n = '0'; n < '15'; n++)
 	{
-		for (m = '0'; m < '9'; m++)
+		for (m = '0'; m < '15'; m++)
 		{
-			for (k = '0'; k < '9'; k++)
+			for (k = '0'; k < '15'; k++)
 			{
 				if (n < m && m < k)
 				{
