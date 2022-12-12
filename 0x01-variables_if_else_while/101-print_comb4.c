@@ -8,11 +8,11 @@ int main(void)
 {
 	int n, m, k;
 
-	for (n = '48'; n < '58'; n++)
+	for (n = '0'; n < '9'; n++)
 	{
-		for (m = '48'; m < '58'; m++)
+		for (m = '0'; m < '9'; m++)
 		{
-			for (k = '48'; k < '58'; k++)
+			for (k = '0'; k < '9'; k++)
 			{
 				if (n < m && m < k)
 				{
@@ -20,7 +20,7 @@ int main(void)
 					putchar(m);
 					putchar(k);
 
-					if (n != '55')
+					if (n != '6')
 					{
 						putchar(',');
 						putchar(' ');
