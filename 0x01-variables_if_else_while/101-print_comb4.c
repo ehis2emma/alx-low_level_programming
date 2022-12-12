@@ -6,19 +6,19 @@
  */
 int main(void)
 {
-	int n, m, 1;
+	int n, m, k;
 
 	for (n = '0'; n < '9'; n++)
 	{
 		for (m = '0'; m < '9'; m++)
 		{
-			for (1 = '0'; 1 < '9'; 1++)
+			for (k = '0'; k < '9'; k++)
 			{
-				if (n < m && m < 1)
+				if (n < m && m < k)
 				{
 					putchar(n);
 					putchar(m);
-					putchar(1);
+					putchar(k);
 
 					if (n != '7')
 					{
