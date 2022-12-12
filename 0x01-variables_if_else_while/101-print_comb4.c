@@ -20,7 +20,7 @@ int main(void)
 					putchar(m);
 					putchar(k);
 
-					if (n != '8')
+					if (n != '9')
 					{
 						putchar(',');
 						putchar(' ');
