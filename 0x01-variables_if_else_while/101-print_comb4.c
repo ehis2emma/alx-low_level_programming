@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-	int m, n, 1;
+	int n, m, 1;
 
-	for (m = 48; m < 58; m++)
+	for (n = '48'; n < '58'; n++)
 	{
-		for (n = 49; n < 58; n++)
+		for (m = '49'; m < '58'; m++)
 		{
-			for (1 = 50; 1 < 58; 1++)
+			for (1 = '50'; 1 < '58'; 1++)
 			{
-				if (n < m && 1 > m)
+				if (n < m && m < 1)
 				{
 					putchar(n);
 					putchar(m);
