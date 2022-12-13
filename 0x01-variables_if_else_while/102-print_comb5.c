@@ -19,7 +19,7 @@ int main(void)
 				{
 				if (((k + j) > (a + b) && k >= a) || a < k)
 				{
-					purchar(a);
+					putchar(a);
 					putchar(b);
 					putchar(' ');
 					putchar(k);
