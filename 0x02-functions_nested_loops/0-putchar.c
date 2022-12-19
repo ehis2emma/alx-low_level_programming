@@ -5,6 +5,7 @@ include "main.h"
 * Return: Always 0 (Success)
 */
 int main(void)
+
 {
 	char text[10] = "_putchar";
 	int i = 0;
