@@ -1,23 +1,35 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - Entry point
- * Description: print value of n status; zero, positive or negative
- * Return: Always 0 (Success)
-*/
-void positive_or_negative(int i);
+ * main - evaluates whether a value n is positive or negative
+ *
+ * Description: program allocates a random number to the
+ * value n and evaluates whether it is positive or negative
+ *
+ * Return: Always 0 (success)
+ */
+
+int main(void)
 {
-	if (i == 0)
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	if (n > 2)
 	{
-		printf("%d is zero\n", i);
+		printf("%d is positive\n", n);
 	}
-	else if (i > 0)
+	else if (n == 0)
 	{
-		printf("%d is positive\n", i);
+		printf("%d is zero\n", n);
 	}
-	else
+	else if (n < 0)
 	{
-		printf("%d is negative\n", i);
+		printf("%d is negative\n", n);
 	}
+	return (0);
 }
