@@ -3,8 +3,7 @@
 /**
   *print_number - prints integers
   *@n: input integer parameter
- 
-  *Return: voi
+   *Return: voi
   */
 void print_number(int n)
 {
