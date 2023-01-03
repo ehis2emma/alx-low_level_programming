@@ -1,35 +1,25 @@
+#include "main.h"
+
 /**
- * _strspn - a function that gets the
- *           length of a prexif substring
- *
- * @s: pointer to string input
- * @accept: substring prefix to look for
- *
- * Return: the number of bytes in the initial segment
-*/
+ * _strpbrk - locates the first occurrence in the string s of any of
+ * the bytes in the string accept.
+ * @s: string to pick char
+ * @accept: string to compare to
+ * Return: string pointer
+ */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int i, j, f;
+	int index;
 
-	i = 0;
-	while (s[i] != '\0')
+	while (*s)
 	{
-		j = 0;
-		f = 1; /*flag status*/
-		while (accept[j] != '\0')
+		for(index = 0; accept[index]; index++)
 		{
-			if (s[i] == accept[j])
-			{
-				f = 0; /*success*/
-				break;
-			}
-			j++;
+			if (*s == accept[index])
+				return (s);
 		}
-		if (f == 1)
-			break;
-		i++;
+		s++;
 	}
-
-	return (i);
+	return ('\0');
 }
