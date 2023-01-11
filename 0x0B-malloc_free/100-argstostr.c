@@ -42,7 +42,7 @@ char *argstostr(int ac, char **av)
 			k++;
 		}
 		str[k] = '\n';
-		k++
+		k++;
 	}
 	str[k] = '\0';
 
