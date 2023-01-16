@@ -33,13 +33,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= l2)
 		n = l2;
 
-	str = (char *) alloc((l1 + n + 1) * sizeof(char));
+	str = (char *) valloc((l1 + n + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
 
 	/*add s1 to str*/
 	for (i = 0; s1[i] != '\0'; i++)
-		str[i] = s1[i]
+		str[i] = s1[i];
 	/*add s2 n bytes to str*/
 	for (j = 0; j < n && s2[j] != '\0'; j++)
 	{
