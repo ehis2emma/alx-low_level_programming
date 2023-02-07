@@ -13,7 +13,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd;
-	ssize_t w
+	ssize_t w;
 	int size;
 	char *mem;
 
@@ -46,7 +46,7 @@ int create_file(const char *filename, char *text_content)
 	close(fd);
 	free(mem);
 	return (1);
-
+}
 
 /**
  * _strlen - len
